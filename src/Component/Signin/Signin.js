@@ -58,7 +58,9 @@ class Signin extends React.Component {
 	        type="password" 
 	        name="password" 
 	         id="password"
-	          onChange={this.onPasswordChange}
+	          onChange={this.onPasswordChange
+			   //add trim for your password
+    		error={inputFieldData["pass"]["error"]}
 	         />
 	      </div>
 	    	</fieldset>
